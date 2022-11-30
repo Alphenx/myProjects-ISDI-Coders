@@ -53,5 +53,29 @@ const interface = ()=>{
     };
 };
 
-hello();
+
+const howManyFlightsWhitScales = () => {
+    let scaleCounter = 0;
+    flights.forEach((flight) => {
+        if (flight.scale === true){
+            scaleCounter++
+        };
+    });
+
+    console.log(`Hay ${scaleCounter} vuelos que realizan escala.`)
+};
+
+const lastFiveFlights = () => {
+    let lastFive = []
+    flights.splice(-5).forEach((flight) => {
+    
+        lastFive.push(" " + flight.to)
+    });
+    console.log(`Los destinos de los últimos 5 vuelos del día son ${lastFive}`)
+};
+
+
+hello()
 interface();
+howManyFlightsWhitScales();
+lastFiveFlights();

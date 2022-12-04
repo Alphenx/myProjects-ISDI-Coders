@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Bingo - Alphenx</title>
+
+    <script src="./main.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">BINGO</h1>
+        <h2>{ Isdi Coders }</h2>
+    </header>
+    
+    <main class="mainContainer">
+        <form class="textInputContainer" id="textInputForm">
+            <h3 id="alertText"></h3>
+            <input pattern="[A-Za-z ]+" id="textInput" type="text" oninvalid="" placeholder="Pon aquí tu nombre para empezar a jugar" autofocus>
+            <input type="submit" value="+" id="addName">
+            
+        </form>
+
+        <div class="gameContainer">
+            <div class="tableContainer">
+                <h3 id="userPlaying">No player.</h3>
+                <table>
+                    <!--FILA 1-->
+                    <tr>
+                        <td id = 0 class="box">x</td>
+                        <td id = 1 class="box">x</td>
+                        <td id = 2 class="box">x</td>
+                        <td id = 3 class="box">x</td>
+                    </tr>
+                    <!--FILA 2-->
+                    <tr>
+                        <td id = 4 class="box">x</td>
+                        <td id = 5 class="box">x</td>
+                        <td id = 6 class="box">x</td>
+                        <td id = 7 class="box">x</td>
+                    </tr>
+                    <!--FILA 3-->
+                    <tr>
+                        <td id = 8 class="box">x</td>
+                        <td id = 9 class="box">x</td>
+                        <td id = 10 class="box">x</td>
+                        <td id = 11 class="box">x</td>
+                    </tr>
+                    <!--FILA 4-->
+                    <tr>
+                        <td id = 12 class="box">x</td>
+                        <td id = 13 class="box">x</td>
+                        <td id = 14 class="box">x</td>
+                        <td id = 15 class="box">x</td>
+                    </tr>
+                </table>
+            </div>
+        
+
+            <div class="buttonContainer">
+                <button id="newCard">Nuevo cartón</button>
+                <button id="confirmCard">✔</button>
+                <button id="play">JUGAR</button>
+
+                <div class="lastNumber">
+                    <h4>Último número:</h4>
+                    <h3 id="lastNumber">00</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pointsContainer" id="pointsCounter">
+            <table>
+                <tr>
+                    <td colspan="2"><h2>Tabla de puntuaciones</h2></td>
+                </tr>
+                <tr>
+                    <td><h3>Jugador</h3></td>
+                    <td><h3>Puntos</h3></td>
+                </tr>
+
+                <tr id="tableInfo">
+                    <td><h3 id="playerName"></h3></td>
+                    <td><h3 id="playerPoints"></h3></td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>Author:</b> Adrián García.<br><b>Powered by:</b> buclesInfinitos S.A.</p>
+    </footer>
+    
+</body>
+</html>

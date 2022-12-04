@@ -1,0 +1,273 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: #833ab4;
+    background: radial-gradient(circle,
+        rgba(131,58,180,1) 0%,
+        rgba(253,29,29,0.7825) 50%,
+        #fcb045 100%);
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*TITULO - HEAD*/
+header{
+    font-family:'Comfortaa', cursive;
+    font-size: 1.5em;
+
+    flex-direction: column;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#title{
+    font-size: 2.5em;
+    padding-bottom: 0.2em;
+};
+
+
+
+
+/*Espacio principal APP*/
+main{
+    display: flex;
+}
+
+.mainContainer{
+    padding: 0.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1400px;
+}
+
+
+/*Contenedor del text input*/
+.textInputContainer{
+    display: block;
+    flex-wrap: wrap;
+    width: 30em;
+    text-align: center;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.textInputContainer > input {
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: aliceblue;
+    width: 30em;
+    border: none;
+    padding: 1em 0.1em;
+    border-radius: 0.7em;
+    align-items: center;
+    margin-left: 0.3em;
+    font-size: 0.8em;
+
+}
+
+.textInputContainer > input::placeholder{
+    outline: rgb(252, 176, 69, 0.8);
+    color: aliceblue;
+}
+
+.textInputContainer > input:focus{
+    outline-color:aliceblue;
+}
+
+#addName{
+    width: 1.5em;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: aliceblue;
+}
+
+
+
+/*Contenedor del bingo y botones*/
+.gameContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.tableContainer, .buttonContainer{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 0.8em;
+    border-radius: 0.7em;
+    margin: 1em 2em;
+}
+
+/*Tabla BINGO*/
+#userPlaying{
+    display: block;
+    font-weight: 400;
+    padding: 0.5em 0.2em;
+}
+.box {
+    background-color: aliceblue;
+    width: 1.8em;
+    height: 1.8em;
+    padding: 10px;
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 2.3em;
+};
+
+/*Tabla BOTONES*/
+.buttonContainer{
+    display: flex;
+    text-align: center;
+}
+
+button{
+    padding: 0.5em 1em;
+    margin-bottom: 0.6em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    border: 0;
+    
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#play{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#play:hover{
+    background-color: rgb(252, 176, 69, 0.8);
+    color: aliceblue;
+    transition: 0.1ms;
+    cursor: pointer;
+}
+
+#confirmCard{
+    color: darkgreen;
+    font-weight: bolder;
+    width: 25%;
+    
+}
+
+#confirmCard:hover{
+    background-color: darkgreen;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#confirmCard:focus{
+    outline: darkgreen;
+}
+
+#newCard{
+    margin: 0.6em;
+    width: 60%;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#newCard:hover{
+    background-color: #833ab4;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.lastNumber{
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.lastNumber > h4{
+    font-weight: 500;
+}
+
+#lastNumber{
+    padding: 0.4em;
+    margin: 1em 0.3em;
+    border-radius: 0.3em;
+    font-size: 2em;
+    background-color:  rgb(255, 255, 255, 0.2);    ;
+    
+}
+
+/*Tabla de Puntuaciones*/
+
+.pointsContainer{
+    text-align: center;
+    margin: 0.5em auto;
+    
+}
+
+.pointsContainer > table{
+    font-family:'Comfortaa', cursive;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 1em 2.1em;
+    border-radius: 0.3em;
+}
+
+td > h2{
+    margin-bottom: 0.5em;
+    font-weight: 900;
+}
+
+td > h3{
+    padding: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 14px;
+    }
+
+    .box{
+        font-size: 2.5em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .buttonContainer{
+        text-align: center;
+        width: 65%;
+    }
+    
+    .lastNumber{
+        text-align: center;
+        margin: 0.1em 3em;
+    }
+
+    #lastNumber {
+        padding: 0.3em;
+        margin: 0.2em 0;
+    }
+
+    #addName{
+        font-size: 1.5em;
+    }
+    
+}

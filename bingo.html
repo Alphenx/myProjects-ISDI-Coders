@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./bingo.js" defer></script>
+
+    <link rel="stylesheet" href="bingo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>BINGO</h1>
+        <h3>{ Isdi Coders }</h3>
+    </header>
+
+    <main>
+        
+        <div class = "caja1" id = "sectionCard">
+            <h3 id="userPlaying">No player.</h3>
+            <table>
+                <!--FILA 1-->
+                <tr>
+                    <td id = 0 class="box">x</td>
+                    <td id = 1 class="box">x</td>
+                    <td id = 2 class="box">x</td>
+                    <td id = 3 class="box">x</td>
+                </tr>
+                <!--FILA 2-->
+                <tr>
+                    <td id = 4 class="box">x</td>
+                    <td id = 5 class="box">x</td>
+                    <td id = 6 class="box">x</td>
+                    <td id = 7 class="box">x</td>
+                </tr>
+                <!--FILA 3-->
+                <tr>
+                    <td id = 8 class="box">x</td>
+                    <td id = 9 class="box">x</td>
+                    <td id = 10 class="box">x</td>
+                    <td id = 11 class="box">x</td>
+                </tr>
+                <!--FILA 4-->
+                <tr>
+                    <td id = 12 class="box">x</td>
+                    <td id = 13 class="box">x</td>
+                    <td id = 14 class="box">x</td>
+                    <td id = 15 class="box">x</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class = "caja2">
+            <button class="newCardButton" id= "buttonGenCard">Nuevo cartón</button>
+            <button class="confirmButton" id="confirm">✔</button>
+            <button class="playButton" id="play">JUGAR</button>
+            <h3>Último numero:</h3>
+            <div class="lastNumber" id="lastNumber">00</div>
+        </div>
+
+    </main>
+
+    
+    
+
+    <footer>
+
+        <div class="caja3" id = "sectionPoints">
+            <table id="tablePoints">
+                <tr>
+                    <td colspan="2" id="tableTitle"><h2>Tabla de puntuaciones</h2></td>
+                </tr>
+                <tr id="tableInfo">
+                    <td><h3>Jugador</h3></td>
+                    <td><h3>Puntos</h3></td>
+                </tr>
+
+                <tr id="tableInformation">
+                    <td><h3 id="playerName"></h3></td>
+                    <td><h3 id="playerPoints"></h3></td>
+                </tr>
+
+            
+            </table>
+        </div>
+
+        <p><b>Author:</b> Adrián García.<br><b>Powered by:</b> buclesInfinitos S.A.</p>
+
+    </footer>
+
+</body>
+</html>
